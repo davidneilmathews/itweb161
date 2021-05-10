@@ -34,3 +34,19 @@ table.audience th {
 table.audience th {
     width: 33.3%;
 }
+
+p.bold {
+    font-weight: bolder;
+}
+
+td p {
+    margin: 0;
+}
+
+td ul {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
