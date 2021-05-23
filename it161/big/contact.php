@@ -25,13 +25,14 @@
                     <ul>
                         <li><a href="accessibility.html"><i class="fa fa-fw fa-globe"></i> Accessibility</a></li>
                         <li><a href="smo.html"><i class="fa fa-fw fa-thumbs-o-up"></i> SMO</a></li>
+                        <li><a href="forms.html"><i class="fa fa-square-o"></i> Forms</a></li>
                     </ul>
                 </li>
 
                 <li><a href="gallery.html"><i class="fa fa-fw fa-camera-retro"></i> Gallery</a></li>
                 <li><a href="#"><i class="fa fa-fw fa-bars"></i> Google Tools</a>
                     <ul>
-                        <li><a href="seo.html"><i class="fa fa-fw fa-desktop"></i> SEO</a></li>
+                        <li><a href="seo.html"><i class="fa fa-fw fa-desktop"></i> Live Feeds</a></li>
                         <li><a href="calendar.html"><i class="fa fa-fw fa-calendar"></i> Calendar</a></li>
                         <li><a href="map.html"><i class="fa fa-fw fa-map-o"></i> Map</a></li>
                     </ul>
@@ -45,9 +46,24 @@
         <!-- START LEFT COLUMN -->
         <section class="fullwidth">
             <h2 class="subheader">Contact David</h2>
-            <p>Provide an introduction to this BIG website and explain the web developer examples (pages) you've created for this website.</p>
-            <p> To interview for a web job, thoughtfully contribute to a web team, and provide guidance for web clients, it's vital that we keep learning to stay on top of current and coming web topics and coding practices. Describe three or more ways for
-                you to grow and maintain your web knowledge and skills.</p>
+            <?php
+        /*
+         * Below are 2 different forms to be re-used       
+         * 
+         * Only use one at a time, comment out the other!       
+         *
+         */
+
+        include 'includes/contact_include.php'; #site keys & code here
+    
+        $toAddress = "davidneilmathews@gmail.com";  //place your/your client's email address here
+        $toName = "David Mathews"; //place your client's name here
+        $website = "IT 161 contact form";  //place NAME of your client's website
+
+        //echo loadContact('simple.php');#demonstrates a simple contact form
+        echo loadContact('multiple.php');#demonstrates multiple form elements
+
+	?>
         </section>
         <!-- END LEFT COLUMN -->
 
