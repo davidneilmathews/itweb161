@@ -1,12 +1,15 @@
 /* BIG Website */
 
-html {
-    background-color: #ccc;
+header {
+    width: 100%;
+}
+
+body {
+    margin: 0;
 }
 
 main {
     background-color: #fff;
-    width: 80%;
     margin: auto;
     padding: 1em;
 }
@@ -15,39 +18,139 @@ h1 a {
     text-decoration: none;
 }
 
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4em;
+    color: #4b524f;
+    text-align: center;
+}
+
 .fullwidth {
     width: 100%;
 }
 
+.map {
+    width: 80%;
+    margin: auto;
+}
+
 section {
     float: left;
-    width: 79%;
+    width: 50%;
+}
+
+section.two_thirds {
+    width: 66%;
+    float: left;
 }
 
 aside {
+    width: 30%;
+    margin-left: 1em;
     float: right;
-    width: 20%;
+}
+
+.gallery {
+    margin: auto;
+    width: 930px;
+}
+
+.socialmediaicons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 165px;
+}
+
+.socialmediaicons a {
+    margin: 2px;
 }
 
 figure {
     display: inline-block;
-    border: 1px solid #000;
-    margin: .25%;
-}
-
-dd {
-    word-wrap: break-word;
-    margin-inline-start: 20px;
-}
-
-dt {
-    font-weight: bold;
+    margin: 3px;
+    border: 0%;
 }
 
 footer {
     padding: 1em;
     text-align: center;
     clear: both;
+}
+
+
+/* For book club sign-up styles */
+
+form {
+    margin: auto;
+    width: 60%;
+    border: 1px #4b524f solid;
+    padding-bottom: 2em;
+    border-radius: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #4b524f;
+}
+
+form div {
+    padding: 1em;
+}
+
+form div.g-recaptcha div {
+    padding: 0;
+}
+
+form div fieldset {
+    border: none;
+}
+
+form div input[type="submit"] {
+    color: #4b524f;
+    background-color: #a4dec5;
+    border: 1px solid #4b524f;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    float: right;
+    margin: .25em;
+}
+
+.contact-feedback {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    color: #4b524f;
+    text-align: center;
+}
+
+
+/* Events Styles */
+
+.event_card {
+    margin: .5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #4b524f;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* About Us Styles */
+
+.about_us_picture {
+    width: 410px;
+    float: left;
 }
 
 
@@ -87,18 +190,51 @@ footer {
     div.embed-container.month-view {
         display: none;
     }
+    section p {
+        margin: 1em;
+    }
+    .gallery {
+        margin: auto;
+        width: 620px;
+    }
+    .phone-hide {
+        display: none;
+    }
 }
 
 @media all and (max-width:600px) {
     main {
         width: 100%;
     }
+    header {
+        width: 110%;
+    }
     section {
         float: none;
         width: 100%;
+        margin-bottom: 1em;
+        text-align: center;
     }
     aside {
         float: none;
         width: 100%;
+    }
+    .gallery {
+        margin: auto;
+        width: 310px;
+    }
+    .phone-hide {
+        display: none;
+    }
+    .tablet-hide {
+        display: none;
+    }
+    section.two_thirds {
+        width: 100%;
+        float: none;
+    }
+    form {
+        width: 100%;
+        border: 0px;
     }
 }
